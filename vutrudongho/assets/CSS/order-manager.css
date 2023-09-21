@@ -1,0 +1,237 @@
+.order {
+    margin-top: 20px;    
+    padding: 0 30px;
+}
+
+.order__search input:focus, .order__search select:focus{
+    outline: 1px solid #6750A4;
+}
+
+.order__search > div {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.order-search__date > span {
+    margin: 0 12px;
+    font-size: 2rem;
+    color: #6750A4;
+}
+
+.order-search__address > select {
+    margin-right: 36px;
+    width: 180px;
+}
+
+.order-search__status > select{
+    width: 150px;
+}
+
+.order__search > div > label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #6750A4;
+    min-width: 120px;
+}
+
+.order__search > div > select, .order__search > div > input {
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.order-search__filter {
+    margin-left: 36px;
+    width: 100px;
+    background-color: #6750A4;
+    padding: 5px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+
+.order-search__filter:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.order__table {
+    margin-top: 32px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order__table th, .order__table td {
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+}
+
+.order__table th, .order__table td  {
+    padding: 12px;
+}
+
+.order__table th {
+    color: #6750A4;
+}
+
+.order__table td {
+    max-width: 150px;
+    text-overflow: ellipsis; /* thêm dấu '...' nếu nội dung quá dài */
+    overflow: hidden; /* ẩn nội dung dài */
+    white-space: nowrap; /* ngăn cách các dòng văn bản */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.order__table td .material-symbols-outlined {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgba(26, 197, 74, 0.8);
+}
+
+.order__table td .material-symbols-outlined:hover {
+    opacity: 0.6;
+}
+
+.modal-order.open {
+    display: flex;
+}
+
+.modal-order {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-order__container {
+    position: relative;
+    width: 60%;
+    min-height: 65%;
+    max-height: 93%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.modal-order-container__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+}
+
+.modal-order-container__close > span {
+    font-size: 2.2rem;
+    opacity: 0.9;
+}
+
+.modal-order-container__close:hover > span {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-order-container__content {
+    font-size: 1.4rem;
+    padding: 24px;
+}
+
+.modal-order-container-content__heading {
+    font-size: 1.8rem;
+    color: #6750A4;
+    margin-bottom: 20px;
+}
+
+.modal-order-container-content__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.modal-order-container-content__info > div > div {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-order-container-content__info > div > div > p {
+    width: 110px;
+    color: #6750A4;
+}
+
+.modal-order-container-content__info > div > div > input {
+    width: 300px;
+    padding: 4px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: 1px solid #f4f3f3;
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+.modal-order-container-content__table-wrapper {
+    max-height: 283px;
+    margin-top: 28px;
+    overflow: auto;
+}
+
+.modal-order-container-content__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-order-container-content__table th, .modal-order-container-content__table td {
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.modal-order-container-content__table th {
+    color: #6750A4;
+}
+
+.modal-order-container-content__table td {
+    max-width: 150px;
+    text-overflow: ellipsis; /* thêm dấu '...' nếu nội dung quá dài */
+    overflow: hidden; /* ẩn nội dung dài */
+    white-space: nowrap; /* ngăn cách các dòng văn bản */
+    text-align: center;
+}
+
+.modal-order-container-content__total-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.modal-order-container-content__total-container > div {
+    margin-top: 16px;
+    display: flex;
+}
+
+.modal-order-container-content__total-container > div > p {
+    color: #6750A4;
+}
+
+.modal-order-container-content__total-container > div > p:first-child {
+    text-align: left;
+    width: 120px;
+    font-weight: 600;
+}
+
+.modal-order-container-content__total-container > div > p:last-child {
+    text-align: right;
+    width: 120px;
+}
+
+

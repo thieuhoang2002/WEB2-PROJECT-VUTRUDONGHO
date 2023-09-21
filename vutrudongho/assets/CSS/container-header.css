@@ -1,0 +1,97 @@
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--container-header);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container-header__title {
+    margin-left: 20px;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container-header__admin-account {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: var(--container-header);
+}
+
+.container-header__admin-account:hover .container-header-admin-account-info__subnav {
+    display: block;
+}
+
+.container-header-admin-account__avt {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url(../img/admin-avatar/admin.jpg) top center / cover no-repeat;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container-header-admin-account__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-header-admin-account-info__name {
+    display: flex;
+    align-items: center;
+}
+
+.container-header-admin-account-info-name__detail {
+    font-size: 1.4rem;
+}
+
+.container-header-admin-account-info__pos {
+    font-size: 1.2rem;
+}
+
+.container-header-admin-account-info__subnav {
+    display: none;
+    position: absolute;
+    top: calc(var(--container-header));
+    right: 0;
+    min-width: 170px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    border-radius: 8px;
+    background-color: #dddddd;
+}
+
+.container-header-admin-account-info__subnav > li:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.container-header-admin-account-info__subnav > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    color: #000;
+}
+
+.container-header-admin-account-info__subnav > li > a:hover {
+    color: #6750A4;
+}
+
+.container-header-admin-account-info__subnav > li > a > span:first-child {
+    margin-right: 20px;
+    width: 8px;
+    font-weight: 200;
+}
+
+.container-header-admin-account-info__subnav::before {
+    position: absolute;
+    top: -36px;
+    right: 10px;
+    display: block;
+    content: "";
+    border-width: 20px 10px;
+    border-style: solid;
+    border-color: transparent transparent #dddddd transparent;
+}

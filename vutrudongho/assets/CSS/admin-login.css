@@ -1,0 +1,80 @@
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background: url('../Img/admin-background/clockwork-1683527673067-6286.jpg') top center / cover no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60%;
+    width: 40%;
+    height: 100vh;
+}
+
+.login {
+    width: 420px;
+    height: 400px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.login__heading {
+    margin-top: 10%;
+    font-size: 2rem;
+    text-align: center;
+    color: #6750A4;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.login > label, .login > input {
+    display: block;
+    width: 100%;
+}
+
+.login > label {
+    margin-top: 24px
+}
+
+.login__heading + label {
+    margin-top: 40px;
+}
+
+.login > input {
+    margin-top: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.login > input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.login__btn {
+    margin-top: 40px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6750A4;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.login__btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.err {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    color: #cb390d;
+    font-style: italic;
+}

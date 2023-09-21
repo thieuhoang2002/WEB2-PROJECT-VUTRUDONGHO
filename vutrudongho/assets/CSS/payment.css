@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+.payment_container {
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+    margin: 35px auto;
+}
+
+.payment_content {
+    height: auto;
+    flex: 2;
+    border: solid 1px rgba(0, 0, 0, 40%);
+    border-radius: 12px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.product_list_container {
+    height: fit-content;
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 12px;
+    border: solid 1px rgba(0, 0, 0, 40%);
+    overflow: hidden;
+
+}
+
+.payment_content_header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #E8DEF8;
+    color: #21005D;
+    padding: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 40%);
+}
+
+.payment_content_header span {
+    font-size: 1.875rem;
+}
+
+.delivery_method, .payment_method {
+    font-size: 1.25rem;
+    color: #21005D;
+    font-weight: 600;
+    padding: 10px 10px 10px 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 40%);
+}
+
+.address_label {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 15px 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.user_address {
+    font-size: 1rem;
+    padding: 0px 0px 30px 20px;
+}
+
+.user_address p {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.user_address span {
+    margin: 20px 20px 0px 0px;
+}
+
+.delivery_cards {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: solid 1px rgba(0, 0, 0, 40%);
+}
+
+.delivery_card {
+    margin: 0px 20px;
+    width: 200px;
+    height: 100px;
+    border: solid 1px rgba(0, 0, 0, 20%);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.delivery_title {
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid 1px rgba(0, 0, 0, 20%);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.delivery_price {
+    text-align: center;
+    color: #6750A4;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 1.125rem;
+}
+
+.delivery_time {
+    text-align: center;
+    font-size: 0.813rem;
+}
+
+.payment_cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0px 10px 0px;
+    border-bottom: solid 1px rgba(0, 0, 0, 40%);
+}
+
+.payment_cards_row {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.payment_card {
+    margin: 0px 20px;
+    width: 200px;
+    height: 100px;
+    border: solid 1px rgba(0, 0, 0, 20%);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.payment_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 1px rgba(0, 0, 0, 20%);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.payment_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64%;
+    font-size: 1rem;
+}
+
+.voucher {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 40px;
+}
+
+.voucher_name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.voucher_name_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8DEF8;
+    font-size: 0.875rem;
+    line-height: 26px;
+    width: auto;
+    border-radius: 12px;
+    padding: 0px 5px 0px 10px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.voucher_name_container span {
+    padding-left: 6px;
+    font-size: 22px;
+    color: brown;
+    cursor: pointer;
+}
+
+.voucher_discount {
+    color: #D33636;
+}
+
+.voucher_submit {
+    margin-left: 70px;
+    flex: 1;
+    
+}
+
+.voucher_input {
+    width: 12.5rem;
+    height: 1.85rem;
+    border-radius: 8px;
+    border: solid 1px rgba(0, 0, 0, 40%);
+    background-color: #F2EFEF;
+    padding: 10px;
+}
+
+.submit_button {
+    cursor: pointer;
+    background-color: #6750A4;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 1.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.payment_button {
+    cursor: pointer;
+    background-color: #6750A4;
+    color: white;
+    border: none;
+    width: 20.125rem;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+}
+
+.product_list_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #21005D;
+    padding: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 40%);
+    border-radius: 12px;
+    background-color: #E8DEF8;
+    margin-bottom: 10px;
+}
+
+.product_item {
+    margin: 20px 0px;
+    padding: 0px 10px;
+    display: flex;
+    height: 5rem;
+}
+
+.product_item_img {
+    width: 5rem;
+    margin-right: 5px;
+
+}
+
+.product_item_img img {
+    height: 5rem;
+    display: block;
+    width: auto;
+    margin: auto;
+}
+
+.product_detail {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_item_name {
+    font-size: 0.813rem;
+    font-weight: 600;
+}
+
+.product_item_price_category {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.938rem;
+
+}
+
+/* .product_item_category {
+
+
+} */
+
+.product_item_price {
+    color: #6750A4;
+}
+
+.payment_detail {
+    background-color: #E8DEF8;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.875rem;
+}
+
+.payment_detail_pricetotal {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+}
+
+.payment_detail_pricetotal span {
+    color: #221e30;
+}
+
+
+.payment_detail_total {
+    padding-top: 10px;
+    border-top: solid 1px rgba(0, 0, 0, 40%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.payment_detail_total p {
+    color: #6750A4;
+    font-weight: 600;
+}
+
+
+ /* cart_active */
+
+.card_active {
+    border: solid 1px #6750A4;
+}
+
+.header_active {
+    border-bottom: solid 1px #6750A4;
+}
+
+.icon_clicked {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0px 0px 8px 0px;
+}
+
+.icon_clicked::before {
+    border: 30px solid transparent;
+    border-bottom: 30px solid #6750A4;
+    content: "";
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+}
+
+.icon_clicked span {
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    color: #fff;
+}

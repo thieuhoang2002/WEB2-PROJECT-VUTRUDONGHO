@@ -1,0 +1,125 @@
+.revenue_content {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+.revenue_left_content {
+    flex: 4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+}
+
+.revenue_right_content {
+    flex: 1;
+    padding-top: 50px;
+}
+
+.filter_content {
+    width: calc(100% - 60px);
+    height: 7rem;
+    background-color: white;
+    margin: 4rem 3rem 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calender_revenue {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.calender_revenue > span {
+    margin: 0 12px;
+    font-size: 2rem;
+    color: #6750A4;
+}
+
+.calender_revenue > input {
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.date-picker__filter {
+    margin-left: 20px;
+    width: 100px;
+    background-color: #6750A4;
+    padding: 5px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+
+.date_revenue {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.button_filter {
+    padding: 0px 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.25);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.button_filter_clicked {
+    color: #6750A4;
+    border-bottom: 3px solid #6750A4;
+}
+
+.revenue_chart {
+    width: calc(100% - 60px);
+    height: 800px;
+    background-color: white;
+    margin: 0px 30px 0px 30px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revenue_card {
+    width: calc(100% - 30px);
+    height: calc( (100% / 5) - 30px );
+    border-radius: 10px;
+    margin: 0px 30px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.revenue_card h1 {
+    font-family: 'roboto';
+    font-size: 1vw;
+    color: white;
+    padding: 20px 0px 0px 2rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    height: 45%;
+}
+
+.revenue_card p {
+    font-family: 'roboto';
+    font-size: 1.4vw;
+    color: white;
+    text-align: end;
+    padding: 0px 2rem 0px 0px;
+}

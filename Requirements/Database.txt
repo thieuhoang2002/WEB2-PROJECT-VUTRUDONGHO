@@ -1,0 +1,24 @@
+Yêu cầu nghiệp vụ
+
+- Tạo tài khoản
+
+- Thông tin liên hệ ( sdt, họ tên )
+
+- Địa chỉ ( địa chỉ giao hàng )
+
+- Phương thức thanh toán
+
+- Hàng hóa
+
+- Product Variations ( biến thể hàng hóa )
+
+- Giỏ hàng
+
+- Phương thức vận chuyển
+
+- Trạng thái đơn hàng
+
+- Khuyến mãi
+
+- Nhóm hàng
+

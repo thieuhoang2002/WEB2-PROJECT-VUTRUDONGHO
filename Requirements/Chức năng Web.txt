@@ -1,0 +1,13 @@
+- Đăng nhập, đăng ký
+- Thông tin tài khoản  ( Hoàng )
+- Trang chủ
+
+- Trang Admin, thống kê ( Hùng, Như )
+- Database		( Hùng, Như, Khoa ) deadline: hết tuần 5
+
+- Trang sản phẩm
+- Giỏ hàng, đặt hàng      ( Khoa )
+- Phương thức thanh toán, giao hàng
+
+Hoàn thành giao diện: hết tuần 9
+Hoàn thành chức năng: hết tuần 11

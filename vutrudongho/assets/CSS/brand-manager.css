@@ -1,0 +1,210 @@
+.brand {
+    margin-top: 30px;    
+    padding: 0 48px;
+}
+
+.brand__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-header__search {
+    display: flex;
+}
+
+.brand-header__search > input {
+    font-size: 1.6rem;
+    width: 360px;
+    padding: 0 8px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.brand-header__search > input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.brand-header__search > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    font-size: 1.2rem;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6750A4;
+    color: #fff;
+}
+
+.brand-header__insert {
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.brand-header__search > button:hover,
+.brand-header__insert:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.brand__table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.brand__table th, .brand__table td {
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+}
+
+.brand__table th, .brand__table td  {
+    padding: 16px;
+}
+
+.brand__table th {
+    color: #6750A4;
+}
+
+.brand__table td {
+    max-width: 150px;
+    text-overflow: ellipsis; /* thêm dấu '...' nếu nội dung quá dài */
+    overflow: hidden; /* ẩn nội dung dài */
+    white-space: nowrap; /* ngăn cách các dòng văn bản */
+    text-align: center;
+}
+
+.brand__table td:nth-child(3) {
+    text-align: left;
+}
+
+.brand__table td .material-symbols-outlined {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(20, 179, 20);
+}
+
+.brand__table td .material-symbols-outlined:hover {
+    opacity: 0.6;
+}
+
+.modal-brand.open {
+    display: flex;
+}
+
+.modal-brand {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-brand__container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.modal-brand-container__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+}
+
+.modal-brand-container__close > span {
+    font-size: 2.2rem;
+    opacity: 0.9;
+}
+
+.modal-brand-container__close:hover > span {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-brand-container__content {
+    font-size: 1.4rem;
+    padding: 24px;
+}
+
+.modal-brand-container-content__heading {
+    font-size: 1.8rem;
+    color: #6750A4;
+    margin-bottom: 20px;
+}
+
+.modal-brand-container__content > label {
+    margin-top: 24px;
+    display: block;
+    color: rgba(0, 0, 0, 0.9)
+}
+
+.modal-brand-container__content > input, .modal-brand-container__content > textarea {
+    margin-top: 12px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-brand-container__content > input:focus, .modal-brand-container__content > textarea:focus {
+    outline: 1px solid #6750A4;
+}
+
+#modal-brand-container-content-id {
+    background-color: #e0dfdf;
+}
+
+.modal-brand-container-content__status {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-brand-container-content__status > label, .modal-brand-container-content__status input {
+    cursor: pointer;
+}
+
+.modal-brand-container-content__status > label {
+    display: flex;
+    align-items: center;
+}
+
+.modal-brand-container-content__status input {
+    margin-right: 4px;
+}
+
+.modal-brand-container-content__btn {
+    margin-top: 28px;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.4rem;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.modal-brand-container-content__btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}

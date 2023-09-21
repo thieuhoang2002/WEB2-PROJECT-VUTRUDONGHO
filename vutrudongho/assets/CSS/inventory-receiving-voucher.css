@@ -1,0 +1,343 @@
+.inventory {
+    margin-top: 30px;    
+    padding: 0 48px;
+}
+
+.inventory__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory-header__search {
+    display: flex;
+}
+
+.inventory-header__search > input {
+    font-size: 1.6rem;
+    width: 360px;
+    padding: 0 8px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.inventory-header__search > input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.inventory-header__search > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    font-size: 1.2rem;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6750A4;
+    color: #fff;
+}
+
+.inventory-header__insert {
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.inventory-header__search > button:hover,
+.inventory-header__insert:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.inventory__table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory__table th, .inventory__table td {
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.inventory__table th {
+    color: #6750A4;
+}
+
+.inventory__table td {
+    max-width: 150px;
+    text-overflow: ellipsis; /* thêm dấu '...' nếu nội dung quá dài */
+    overflow: hidden; /* ẩn nội dung dài */
+    white-space: nowrap; /* ngăn cách các dòng văn bản */
+    text-align: center;
+}
+
+.inventory__table td .material-symbols-outlined {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.inventory__table td .material-symbols-outlined.eye {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.inventory__table td .material-symbols-outlined.edit {
+    color: rgb(20, 179, 20);
+}
+
+.inventory__table td .material-symbols-outlined.del {
+    color: rgb(228, 93, 98);
+}
+
+.inventory__table td .material-symbols-outlined:hover {
+    opacity: 0.6;
+}
+
+.modal-inventory.open {
+    display: flex;
+}
+
+.modal-inventory {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-inventory__container {
+    position: relative;
+    width: 60%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.modal-inventory-container__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+}
+
+.modal-inventory-container__close > span {
+    font-size: 2.2rem;
+    opacity: 0.9;
+}
+
+.modal-inventory-container__close:hover > span {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-inventory-container__content {
+    font-size: 1.4rem;
+    padding: 24px;
+}
+
+.modal-inventory-container-content__heading {
+    font-size: 1.8rem;
+    color: #6750A4;
+    margin-bottom: 20px;
+}
+
+.modal-inventory-container-content__btn {
+    position: absolute;
+    bottom: 24px;
+    margin-top: 28px;
+    width: 93%;
+    padding: 8px;
+    font-size: 1.4rem;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-inventory-container-content__btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-inventory-container-content__info > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-inventory-container-content__info > div > p {
+    white-space: pre;
+    min-width: 110px;
+    color: #000;
+}
+
+.modal-inventory-container-content__info select, .modal-inventory-container-content__info input {
+    width: 220px;
+    padding: 4px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+.modal-inventory-container-content__info select:focus, .modal-inventory-container-content__info input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.modal-inventory-container-content__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-inventory-container-content__flex > div {
+    flex: 1;
+}
+
+.modal-inventory-container-content__search {
+    position: relative;
+}
+
+.modal-inventory-container-content__search-input {
+    margin-bottom: 12px;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    width: 90%;
+    height: 20px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+.modal-inventory-container-content__search-input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.modal-inventory-container-content__search-result {
+    display: none;
+    position: absolute;
+    top: 29px;
+    margin-left: 10%;
+    list-style-type: none;
+    width: 90%;
+    max-height: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+.modal-inventory-container-content-search-result__item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.modal-inventory-container-content-search-result__item:hover {
+    background-color: #f6f4f4;
+    cursor: pointer;
+}
+
+.modal-inventory-container-content-search-result__item + .modal-inventory-container-content-search-result__item {
+    border-top: 1px solid #ccc;
+}
+
+.modal-inventory-container-content-search-result-item__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.modal-inventory-container-content-search-result-item__img img {
+    width: 40px;
+    height: 40px;
+}
+
+.modal-inventory-container-content-search-result-item__info {
+    padding: 8px 12px;
+    line-height: 1.6rem;
+}
+
+.modal-inventory-container-content-search-result-item__info > p:first-child {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.modal-inventory-container-content-search-result-item__info > p:last-child {
+    margin-top: 4px;
+    font-size: 1rem;
+    color: #6750A4;
+    font-style: italic;
+}
+
+.modal-inventory-container-content__table-wrapper {
+    max-height: 320px;
+    margin-top: 12px;
+    overflow: auto;
+}
+
+.modal-inventory-container-content__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-inventory-container-content__table th, .modal-inventory-container-content__table td {
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.modal-inventory-container-content__table th {
+    color: #6750A4;
+}
+
+.modal-inventory-container-content__table td {
+    max-width: 150px;
+    text-overflow: ellipsis; /* thêm dấu '...' nếu nội dung quá dài */
+    overflow: hidden; /* ẩn nội dung dài */
+    white-space: nowrap; /* ngăn cách các dòng văn bản */
+    text-align: center;
+}
+
+.modal-inventory-container-content__table td .material-symbols-outlined {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(228, 93, 98);
+}
+
+.modal-inventory-container-content__table td .material-symbols-outlined.del:hover {
+    opacity: 0.8;
+}
+
+.modal-inventory-container-content__total-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: end;
+}
+
+.modal-inventory-container-content__total {
+    color: #6750A4;
+    font-weight: 600;
+}
+
+.modal-inventory-container-content__total-re {
+    color: #6750A4;
+    font-weight: 600;
+    white-space: pre;
+}

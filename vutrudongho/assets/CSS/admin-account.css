@@ -1,0 +1,82 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-account {
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.admin-account-info__avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-account-info-avatar__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../img/admin-avatar/admin.jpg) top center / cover no-repeat;
+}
+
+.admin-account-info__row {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.admin-account-info__row > label {
+    width: 150px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.admin-account-info__row > input {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.admin-account-info__row > input:focus {
+    outline: 1px solid #6750A4;
+}
+
+.admin-account-edit__btn {
+    margin-top: 36px;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.4rem;
+    background-color: #6750A4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.admin-account-edit__btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#AdminID {
+    background-color: #f2f1f1;
+}
+
+#AdminID:focus {
+    outline: none;
+}
+
+.err {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    color: #cb390d;
+    font-style: italic;
+}

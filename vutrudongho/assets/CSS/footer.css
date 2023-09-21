@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.theAtrongFooter{
+    text-decoration: none;
+    color: #fff;
+}
+.theAtrongFooter:hover{
+    text-decoration: underline;
+    
+}
+.footer-footer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(103, 80, 164, 1);
+}
+
+#section-1{
+    display: flex;
+    flex-direction: row;
+
+    width: 95%;
+    height: 400px;
+
+}
+#hotro-dichvu{
+    display: flex;
+    flex-direction: column;
+width: 25%;
+
+}
+#thong-tin-lien-he{
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+
+}
+#he-thong-cua-hang-toan-quoc{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+
+}
+#thanh-toan-van-chuyen{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    flex-wrap: wrap;
+}
+#img-logo-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#section-2{
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    height: 100px;
+}
+#footer-line-1{
+text-align: center;
+color: #fff;
+line-height: 1.3;
+}
+#footer-line-2{
+text-align: center;
+color: #fff;
+line-height: 1.3;
+padding: 4px 0;
+}
+.bigtitlehomeFooter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.3px;
+}
+
+.mediumtitlehomeFooter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 22px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.3px;
+}
+
+.smalltitlehomeFooter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.3px;
+}
+
+.minititlehomeFooter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.3px;
+}
+
+.gianCachFooter{
+    padding: 8px 0;
+}
