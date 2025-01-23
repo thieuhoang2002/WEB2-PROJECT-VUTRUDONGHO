@@ -32,7 +32,7 @@ Dự án được xây dựng bằng sử dụng các công nghệ và ngôn ng�
 4. **Import dữ liệu**
    Trong thư mục gốc của dự án, tìm thư mục "Database" và bạn sẽ thấy tệp "vutrudongho_version16052023_vovanhung.sql".
    Mở phpMyAdmin và chọn cơ sở dữ liệu "vutrudongho" mà bạn vừa tạo.
-   Nhấp vào tab "Import" và chọn tệp "vutrudongho_version16052023_vovanhung.sql" để import dữ liệu vào cơ sở dữ liệu.
+   Nhấp vào tab "Import" và chọn tệp "vutrudongho_version19052023.sql" để import dữ liệu vào cơ sở dữ liệu.
 5. **Bật XAMPP và khởi chạy dự án**
    Khởi động lại XAMPP và đảm bảo rằng cả Apache và MySQL đều đang chạy.
    Mở trình duyệt và gõ http://localhost:3000 (hoặc URL tương ứng điều hướng tới project) để chạy dự án.
